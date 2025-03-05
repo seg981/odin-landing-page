@@ -186,12 +186,12 @@ h2 {
     align-items: center;
     background:#3882F6;
     border-radius: 10px;
-    padding: 50px 100px 50px 100px;
 }
 
 .action-content {
     display: flex;
-    
+    flex-grow: 1;
+    justify-content: space-evenly;
 }
 
 .action-header {
@@ -214,11 +214,11 @@ h2 {
     color: #ffffff;
     background: #3882F6;
     border: solid #ffffff 2px;
-    width: 110px;
+    width: 120px;
     height: 25px;
     padding-top: 3px;
     padding-bottom: 3px;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 footer {

@@ -17,22 +17,13 @@ header, footer {
     background-color: #1F2937;
 }
 
-header {
-    padding-top: 25px;
-}
-
-.header-content {
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-}
-
 header, .information, .quote, .call-to-action {
     padding-right: 300px;
     padding-left: 300px;
 }
+
+
+/* Topbar Section */
 
 .topbar {
     display: flex;
@@ -70,6 +61,13 @@ a, footer, .subtext, .img {
     text-decoration: none;
 }
 
+
+/* Header Section */
+
+header {
+    padding-top: 25px;
+}
+
 h1 {
     color: #F9FAF8;
     font-size: 48px;
@@ -77,15 +75,12 @@ h1 {
     margin: 0;
 }
 
-h2 {
+.header-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #1F2937;
-    font-size: 36px;
-    font-weight: 900;
-    margin: 0;
-    margin-bottom: 50px;
+    flex-flow: row wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
 }
 
 .button {
@@ -109,6 +104,20 @@ h2 {
     width: 550px;
     height: 225px;
     background: #6D747D;
+}
+
+
+/* Information Section */
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 50px;
 }
 
 .information {
@@ -144,6 +153,9 @@ h2 {
     text-align: center;
 }
 
+
+/* Quote Section */
+
 .quote {
     display: flex;
     flex-direction: column;
@@ -167,6 +179,9 @@ h2 {
     font-weight: 600;
     color:#1F2937;
 }
+
+
+/* Call to Action Section */
 
 .call-to-action {
     display: flex;
@@ -220,6 +235,9 @@ h2 {
     padding-bottom: 3px;
     border-radius: 7px;
 }
+
+
+/* Footer Section */
 
 footer {
     display: flex;

@@ -1,27 +1,28 @@
-html, body {
-    height: 100%;
+html {
+    min-width: fit-content;
+    margin: auto;
 }
 
 main {
-    flex: 1 0 auto;
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    min-width: 0;
+    max-width: fit-content;
+    justify-content: center;
 }
 
 body {
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
-    min-width: 800px;
+    min-width: fit-content;
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    margin: auto;
 }
 
 header, footer {
     background-color: #1F2937;
-}
-
-header, .information, .quote, .call-to-action {
-    padding-right: 300px;
-    padding-left: 300px;
 }
 
 /* Topbar Section */
@@ -30,8 +31,8 @@ header, .information, .quote, .call-to-action {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding: 0px 300px;
+
 }
 
 .logo {
@@ -81,18 +82,17 @@ h1 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
+    padding: 100px 300px;
+    gap: 50px;
 }
 
 .header-content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    max-width: 500px;
+    max-width: auto;
     flex-grow: 0;
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 .button {
@@ -177,14 +177,15 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    padding-left: 560px;
-    padding-right: 560px;
+    height: 350px;
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
     color:#1F2937;
     background-color: #E5E7EB;
+    min-height: fit-content;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .author {
@@ -202,28 +203,33 @@ h2 {
 
 .call-to-action {
     display: flex;
+    flex-grow: 0;
     justify-content: center;
     height: 200px;
     width: auto;
     background: #ffffff;
     padding-top: 100px;
     padding-bottom: 100px;
+    min-width: max-content;
 }
 
 .action-container {
     display: flex;
-    flex: 2 1 auto;
+    flex: 1 1 auto;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background:#3882F6;
     border-radius: 10px;
+    padding: 60px;
 }
 
 .action-content {
     display: flex;
     flex-grow: 1;
     justify-content: space-evenly;
+    min-width: max-content;
+    gap: 50px;
 }
 
 .action-header {
